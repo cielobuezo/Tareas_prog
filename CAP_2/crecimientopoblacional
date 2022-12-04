@@ -1,0 +1,22 @@
+import java. util . Scanner;
+public class CrecimientoPoblacional{
+
+
+public static void main (String[] args)
+{
+
+int poblacion, periodo;
+
+try (Scanner entrada = new Scanner( System.in )) {
+
+System. out. print("\nFavor ingresar la cantidad de poblacion inicial: ");
+poblacion = entrada. nextInt();
+System. out. print("\nFavor ingresar el periodo de tiempo de la prueba  : ");
+periodo = entrada. nextInt( ) ;
+
+System. out. print( "\nAl cabo de "+periodo+" años se estima que con una taza de crecimiento
+continua anual del 10% la tribu estara formada en total por "+ ( poblacion * Math. pow((1 +
+0.1), periodo) ) +" personas" );
+}
+}
+}
