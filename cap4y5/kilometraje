@@ -1,0 +1,31 @@
+package cap_4y5;
+import java.util.Scanner;
+
+ public class kilometraje
+
+{ // Abre clase UsaDeitel_4_17
+
+public static void main(String args[])
+{ // Abre metodo main
+Scanner entrada = new Scanner(System.in);
+double galon = 0;
+double kilometros;
+
+kilometraje miObjeto = new kilometraje();
+
+
+System.out.println("\nIntroduzca el numero de galones: (-1 para terminar)\n");
+galon = entrada.nextDouble();
+
+while ( -1 != galon)
+{ 
+
+System.out.println("\nIntroduzca el numero de kilometros: \n");
+kilometros = entrada.nextDouble();
+
+System.out.printf("\nLos kilometros por galon fueron: %.2f: ", miObjeto.Procesa_Datos(galon, kilometros));
+System.out.println("\nIntroduzca el numero de galones: (-1 para terminar) \n");
+galon = entrada.nextDouble();
+} // Cierra while
+} // Cierra metodo main
+}
